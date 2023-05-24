@@ -1,0 +1,234 @@
+body{
+    background-color: #f9f9f9;
+}
+
+.dark{
+    background-color: #030617;
+}
+
+.dark header, .dark footer{
+    background-color: black;
+    box-shadow: 0 3px 20px rgb(79 79 79 / 22%);
+}
+
+.dark h2, .dark h3, .dark a, .dark .modal_content p{
+    color: white;
+}
+
+header{
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 3px 20px rgb(0 0 0 / 22%);
+}
+
+footer{
+    background-color: #d2d2d2;
+    height: 50px;
+    width: 100%;
+    padding: 30px 20px;
+    margin-top: 60px;
+    position: absolute;
+    left: 0;
+}
+
+main{
+    position: relative;
+    left: 20px;
+}
+
+ul {
+  list-style: none; 
+  margin: 0; 
+  padding-left: 10px; 
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h3{
+    margin-bottom: 4px;
+}
+
+.section{
+    padding-top: 60px;
+    position: relative;
+}
+
+.all-cards {
+	display: flex;
+	align-items: center;
+	gap: 18px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.card{
+    width: 220px;
+    border-radius: 6px;
+    position: relative;
+    background-color: #ecebf0;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.218);
+}
+
+.dark .card{
+    background-color: #373846 !important;
+}
+
+.card img{
+    width: 220px;
+    height: 220px;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.card-text{
+    height: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card p{
+    color: #9B9BA2;
+    font-size: 14px;
+}
+
+.mini-img{
+    width: 100px;
+    height: 100px;
+}
+
+.btn {
+    height: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+    border-top: 1px solid #bcbcbc;
+}
+
+.card_date{
+    color: white; 
+    font-size: 13px;
+}
+
+.buy_button{
+    background: linear-gradient(90deg, #6B69F9 0%, #6F6EFF 100%);
+    border-radius: 4px;
+    font-size: 15px;
+    color: white;
+    font-family: 'Jost';
+    padding: 12px 25px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.buy_button:hover, .buy_modal_button:hover{
+    background: #4c49d4;
+}
+
+#to-top::before{
+    content: '▲';
+    font-size: 20px;
+    color: #6B69F9;
+}
+
+#to-top{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 3px 20px rgba(0,0,0,.25);
+    cursor: pointer;
+    z-index: 3;
+}
+
+.modal{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.dark .modal_content, .dark .close_modal_button, .dark .switcher button{
+    background: #030820 !important;
+}
+
+.modal_content{
+    background: #FFFFFF;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 35px 35px;
+    margin: 0 auto;
+    position: relative;
+    margin: 0 auto;
+    top: 15%;
+}
+
+.modal_buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal_buttons input{
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 12px 20px;
+    width: 40%;
+    cursor: pointer;
+}
+
+.buy_modal_button{
+    background: linear-gradient(90deg, #6B69F9 0%, #6F6EFF 100%);
+    color: white;
+    border: none;
+}
+
+.close_modal_button, .switcher button{
+    background: white;
+    color: #6B69F9;
+    border: 1px solid #6B69F9;
+}
+
+.close_modal_button:hover, .switcher button:hover{
+    background: #f4f4ff;
+    border: 1px solid #9a98ff;
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    height: 50px;
+}
+
+.switcher{
+    margin-right: 40px;
+}
+
+.switcher button{
+    border-radius: 4px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
