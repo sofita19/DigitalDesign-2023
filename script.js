@@ -1,4 +1,4 @@
-const showTopBtn = 300;
+const showTopBtn = 300; //высота, после которой появится кнопка "Наверх"
 const backToTopButton = document.getElementById("to-top");
 const modal = document.querySelector(".modal");
 
